@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Baby NEXUS V6 Platform
 
-## Getting Started
+AI-Powered platform created with NEXUS Platform Factory.
 
-First, run the development server:
+## 🚀 Quick Start
 
+### Development
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Setup
+1. Copy `.env.local.example` to `.env.local`
+2. Add your OpenAI API key (get from nexus-platform/.env.local.complete)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### DNS Setup
+```bash
+export GODADDY_API_KEY=your-key
+export GODADDY_API_SECRET=your-secret
+node setup-dns.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 URLs
+- Development: http://localhost:3000
+- Production: https://baby-nexus-v6-platform.vercel.app
+- Custom Domain: https://baby-nexus-v6.thefortaiagency.ai
 
-## Learn More
+## 🛠️ Built With
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- OpenAI API
+- Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Features
+- ✅ AI Chatbot with OpenAI
+- ✅ Responsive design
+- ✅ Multiple pages
+- ✅ Auto-deployment from GitHub
+- ✅ Custom domain with SSL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+Any push to the main branch automatically deploys to production.
